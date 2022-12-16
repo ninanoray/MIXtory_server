@@ -148,16 +148,16 @@ public class TestWebController {
         List<Ingredient> list;
         List<String> likedCnameList = new ArrayList<>();
         try {
-//            list = i_dao.getAll();
-//            m.addAttribute("igdlist", list);
-            String user_name = (String) session.getAttribute("user_id");
-
-            for (Like myLike : like_DAO.getLikes(user_name)) {
-                likedCnameList.add(myLike.getLike_cname());
-            }
-
-            list = i_dao.getLikesFilter(user_name, c_dao.catRecipes(likedCnameList));
+            list = i_dao.getAll();
             m.addAttribute("igdlist", list);
+//            String user_name = (String) session.getAttribute("user_id");
+//
+//            for (Like myLike : like_DAO.getLikes(user_name)) {
+//                likedCnameList.add(myLike.getLike_cname());
+//            }
+//
+//            list = i_dao.getLikesFilter(user_name, c_dao.catRecipes(likedCnameList));
+//            m.addAttribute("igdlist", list);
         } catch (Exception e) {
             e.printStackTrace();
             m.addAttribute("error", i_dao.error);
