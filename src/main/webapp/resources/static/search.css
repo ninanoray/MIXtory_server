@@ -1,0 +1,212 @@
+:root {
+    --main: #060606;
+    --light: #888;
+    --bgcolor: #f2f4f7;
+  }
+  @font-face {
+    font-family: 'Belleza';
+    src: url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * {
+      box-sizing: border-box;
+    }
+  body {
+      margin: 0;
+      background-color: var(--bgcolor);
+      font-family: 'Belleza';
+      letter-spacing: -1px;
+  }
+  a {
+      text-decoration: none; /* 기본 밑줄을 제거합니다 */
+      color: var(--light);
+    }
+    a:hover {
+      text-decoration: underline; /* 마우스 커서가 올라갔을 때 밑줄을 생성합니다*/
+    }
+  h1 {
+    letter-spacing: 1.6px;
+  }
+header {
+    height: 160px;
+    background-color: var(--main);
+    background-size: cover;
+}
+header > section {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 하위 요소들 수직 가운데정렬 */
+    position: relative;
+}
+/* nav */
+header nav {
+    width: 1140px;
+    height: 50px;
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+    top: 0;
+    }
+    .img_logo {
+        width: 300px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+    .img_logo > a {
+        text-decoration: none;
+        color: var(--main);
+    }
+    .nav_items {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .nav_items ul > li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .nav_items ul > li > a {
+        color: var(--main);
+        cursor: pointer;
+    }
+    .login {
+        display: flex;
+        justify-content: end;
+        flex-basis: 300px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+header > section
+    .headline {
+        margin-top: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+    .btn_header {
+        display:block;
+        width: 160px;
+        height: 50px;
+        margin: 20px auto;
+        background-color: transparent;
+        color: white;
+        font-size: 16px;
+        border: 1px solid white;
+        cursor: pointer; 
+        transition:all 0.3s;
+    }
+    .btn_header:hover {
+        color:var(--light);
+        background-color: white;
+        opacity: 0.9;
+    }
+
+main {
+    min-height: 1000px;
+    }
+    main section {
+        margin: auto;
+        width: 1320px;
+        min-height: 80vh;
+        margin-bottom: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; /* 하위 요소들 수직 가운데정렬 */
+        position: relative;
+    }
+    main .title {
+        margin-top: 80px;
+        margin-bottom: 40px;
+        font-size: 24px;
+    }
+    main .center_div {
+        margin: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    main .btn_edit {
+        width: 160px;
+        height: 50px;
+        margin: 6px;
+        background-color: transparent;
+        color: var(--main);
+        font-size: 16px;
+        border: 2px solid var(--main);
+        cursor: pointer; 
+        transition:all 0.3s;
+        }
+        main .btn_edit:hover {
+            background-color: var(--main);
+            opacity: 0.9;
+        }
+        main .btn_edit:hover a {
+            color:var(--bgcolor);
+        }
+        main .btn_edit > a {
+            color: var(--main);
+            text-decoration: none;
+        }
+    table {
+        width: 1140px;
+        border-collapse: collapse;
+        text-align: left;
+        line-height: 1.5;
+        border: none;
+      }
+      table thead th {
+        padding: 10px;
+        font-weight: bold;
+        font-size: 24px;
+        color: var(--main);
+        border: none;
+        border-bottom: 3px solid var(--main);
+        text-align: center;
+      }
+      table td {
+        padding: 10px;
+        border: none;
+      }
+      table .center_cell {
+          text-align: center;
+      }
+    
+    input {
+        width: 100px;
+        height: 55px;
+        }
+        [type = text] {
+            width: 200px;
+            height: 55px;
+            border: none;
+            border-bottom: 1px solid var(--main);
+            background: var(--bgcolor);
+        }
+        [type = submit] {
+            width: 160px;
+            height: 50px;
+            background-color: transparent;
+            color: var(--main);
+            font-size: 16px;
+            border: 2px solid var(--main);
+            cursor: pointer; 
+            transition:all 0.3s;
+            }
+            [type = submit]:hover {
+                background-color: var(--main);
+                color: var(--bgcolor);
+                opacity: 0.9;
+            }
+
+
+footer {
+    background: darkgray;
+    height: 310px;
+}
